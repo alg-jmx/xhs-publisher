@@ -1,0 +1,12 @@
+{
+  "name": "xhs-publisher",
+  "version": "0.1.0",
+  "description": "小红书纯 API 图文/视频笔记发布，无需浏览器，VPN 兼容",
+  "author": "jmx",
+  "created": "2026-03-28",
+  "dependencies": {
+    "python": ">=3.9",
+    "docker": "optional (for sign server)",
+    "pip": ["requests", "lxml"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "xhs-publisher",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我发一条小红书，标题是"周末咖啡探店"，内容写一下这家店的拿铁很好喝推荐大家来试试，用 ~/Desktop/cafe1.jpg 这张图，加上 #咖啡探店 标签，先私密发布测试一下",
+      "expected_output": "调用 publish.py image 命令，正确传入 title、desc、images、topics、--private 参数，成功发布并返回笔记链接",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "检查一下我的小红书登录状态，cookie还有效吗",
+      "expected_output": "调用 cookie_manager.py status，显示用户昵称、cookie获取时间、在线验证结果",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我想把这三张图片发到小红书上，标题你帮我想一个，内容写关于春天踏青的，图片是 ~/photos/spring1.jpg ~/photos/spring2.jpg ~/photos/spring3.jpg，定时明天早上9点发布",
+      "expected_output": "Agent 帮用户拟标题，调用 publish.py image 传入 --schedule 参数定时发布，正确处理多张图片",
+      "files": []
+    }
+  ]
+}
